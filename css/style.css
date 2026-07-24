@@ -1,0 +1,550 @@
+/* ===========================
+   Google Font
+=========================== */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    color: #212529;
+    line-height: 1.6;
+}
+
+/* ===========================
+   Theme Colors
+=========================== */
+:root {
+
+    --primary-color: #0d6efd;
+    --secondary-color: #0A192F;
+    --accent-color: #20c997;
+    --light-color: #f8f9fa;
+    --dark-color: #212529;
+    --white-color: #ffffff;
+
+}
+
+/* ===========================
+   Global Styles
+=========================== */
+section {
+    padding: 100px 0;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+
+.section-subtitle {
+    color: #6c757d;
+    margin-bottom: 50px;
+}
+
+/* ==========================
+   Navigation Bar
+========================== */
+
+.navbar {
+    background: rgba(10, 25, 47, 0.95);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    color: #fff !important;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.navbar-brand img {
+    margin-right: 8px;
+}
+
+.nav-link {
+    color: #fff !important;
+    margin-left: 15px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #20c997 !important;
+}
+
+.navbar .btn {
+    border-radius: 50px;
+    font-weight: 600;
+    padding: 10px 22px;
+}
+
+/* ==========================
+   Hero Section
+========================== */
+
+.hero-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(
+        135deg,
+        var(--secondary-color) 0%,
+        var(--primary-color) 100%
+    );
+    color: var(--white-color);
+    padding-top: 80px;
+    overflow: hidden;
+}
+
+
+/* Hero Badge */
+.hero-section .badge {
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-radius: 50px;
+}
+
+
+/* Hero Heading */
+.hero-section h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-section h1 span {
+    color: var(--accent-color) !important;
+}
+
+
+/* Hero Description */
+.hero-section p.lead {
+    font-size: 1.15rem;
+    color: rgba(255,255,255,0.85);
+    max-width: 600px;
+}
+
+
+/* Hero Buttons */
+.hero-section .btn {
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+
+.hero-section .btn-primary {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+
+.hero-section .btn-primary:hover {
+    background-color: #18a97f;
+    transform: translateY(-3px);
+}
+
+
+.hero-section .btn-outline-light:hover {
+    color: var(--secondary-color);
+    transform: translateY(-3px);
+}
+
+
+/* Feature List */
+.hero-section .row p {
+    color: rgba(255,255,255,0.9);
+    font-size: 0.95rem;
+}
+
+
+.hero-section .bi {
+    margin-right: 8px;
+}
+
+
+/* Hero Image */
+.hero-image {
+    max-width: 90%;
+    animation: floatingImage 4s ease-in-out infinite;
+}
+
+
+/* Floating Animation */
+@keyframes floatingImage {
+
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+
+}
+
+/* ==========================
+   About Section
+========================== */
+
+.about-section {
+    background-color: var(--light-color);
+}
+
+
+.about-feature {
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 15px;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+
+.about-feature:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+
+}
+
+
+.about-feature i {
+
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+
+}
+
+.about-feature h5 {
+
+    font-weight: 600;
+    margin-bottom: 10px;
+
+}
+
+
+.about-feature p {
+
+    font-size: 0.9rem;
+    color: #6c757d;
+
+}
+
+.img-fluid {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* ==========================
+   Services Section
+========================== */
+
+.services-section {
+
+    background: #ffffff;
+
+}
+
+
+.service-card {
+
+    background: #ffffff;
+
+    padding: 35px 25px;
+
+    border-radius: 20px;
+
+    height: 100%;
+
+    text-align: center;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+
+    transition: all 0.4s ease;
+
+    border: 1px solid #eee;
+
+}
+
+
+.service-card:hover {
+
+    transform: translateY(-12px);
+
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+
+}
+
+
+
+.service-icon {
+
+    width: 70px;
+
+    height: 70px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: rgba(13,110,253,0.1);
+
+}
+
+
+.service-icon i {
+
+    font-size: 2rem;
+
+    color: var(--primary-color);
+
+}
+
+
+
+.service-card h4 {
+
+    font-weight: 600;
+
+    margin-bottom: 15px;
+
+}
+
+
+.service-card p {
+
+    color: #6c757d;
+
+    font-size: 0.95rem;
+
+}
+
+
+
+.service-card h6 {
+
+    margin-top: 20px;
+
+    font-weight: 600;
+
+}
+
+
+.service-card h6 span {
+
+    color: var(--primary-color);
+
+}
+
+
+
+.service-card a {
+
+    display: inline-block;
+
+    margin-top: 15px;
+
+    text-decoration: none;
+
+    color: var(--primary-color);
+
+    font-weight: 600;
+
+}
+
+/* ==========================
+   Pricing Section
+========================== */
+
+.pricing-section {
+    background: #f8f9fa;
+}
+
+.pricing-card {
+    position: relative;
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 20px;
+    text-align: center;
+    height: 100%;
+    border: 1px solid #e9ecef;
+    transition: all 0.35s ease;
+    box-shadow: 0 10px 30px rgba(0,0,0,.08);
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 45px rgba(0,0,0,.15);
+}
+
+.pricing-card h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin: 20px 0 5px;
+}
+
+.pricing-card ul {
+    text-align: left;
+    margin-top: 30px;
+}
+
+.pricing-card ul li {
+    margin-bottom: 15px;
+}
+
+.pricing-card i {
+    color: #20c997;
+    margin-right: 10px;
+}
+
+.featured {
+    background: var(--secondary-color);
+    color: white;
+    transform: scale(1.05);
+}
+
+.featured h2,
+.featured h5,
+.featured p,
+.featured li {
+    color: white;
+}
+
+.featured .btn {
+    background: var(--accent-color);
+    border: none;
+}
+
+.featured .btn:hover {
+    background: #18a97f;
+}
+
+.popular-badge {
+    position: absolute;
+    top: -15px;
+    right: 30px;
+    background: var(--accent-color);
+    color: white;
+    padding: 8px 18px;
+    border-radius: 30px;
+    font-size: .85rem;
+    font-weight: 600;
+}
+
+/* ==========================
+   Portfolio Section
+========================== */
+
+.portfolio-section{
+    background:#ffffff;
+}
+
+.portfolio-card{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+    transition:.4s;
+
+    height:100%;
+
+}
+
+.portfolio-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.15);
+
+}
+
+.portfolio-image{
+
+    overflow:hidden;
+
+}
+
+.portfolio-image img{
+
+    width:100%;
+
+    transition:.5s;
+
+}
+
+.portfolio-card:hover img{
+
+    transform:scale(1.1);
+
+}
+
+.portfolio-content{
+
+    padding:25px;
+
+}
+
+.project-category{
+
+    display:inline-block;
+
+    background:rgba(13,110,253,.1);
+
+    color:var(--primary-color);
+
+    padding:6px 15px;
+
+    border-radius:30px;
+
+    font-size:.8rem;
+
+    margin-bottom:15px;
+
+}
+
+.tech-stack{
+
+    margin-top:20px;
+
+}
+
+.tech-stack span{
+
+    display:inline-block;
+
+    padding:6px 14px;
+
+    background:#f8f9fa;
+
+    border-radius:20px;
+
+    margin:4px;
+
+    font-size:.8rem;
+
+}
+
+
