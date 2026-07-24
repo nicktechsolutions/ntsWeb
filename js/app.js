@@ -14,3 +14,42 @@ $(document).ready(function () {
     });
 
 });
+
+$(document).ready(function () {
+
+    let counted = false;
+
+    $(window).on("scroll", function () {
+
+        let sectionTop = $("#statistics").offset().top - window.innerHeight + 100;
+
+        if (!counted && $(window).scrollTop() >= sectionTop) {
+
+            $(".counter").each(function () {
+
+                let $this = $(this);
+                let target = parseInt($this.attr("data-target"));
+
+                $({ countNum: 0 }).animate(
+                    { countNum: target },
+                    {
+                        duration: 2000,
+                        easing: "swing",
+                        step: function () {
+                            $this.text(Math.floor(this.countNum));
+                        },
+                        complete: function () {
+                            $this.text(target + "+");
+                        }
+                    }
+                );
+
+            });
+
+            counted = true;
+
+        }
+
+    });
+
+});
