@@ -1406,61 +1406,53 @@
 
                 <div class="contact-form">
 
-                    <form>
+                    <form action="send-mail.php" method="POST">
 
-                        <div class="row">
+    <div class="row">
+        <div class="col-md-6 mb-3">
+            <input
+                type="text"
+                class="form-control"
+                name="name"
+                placeholder="Full Name"
+                required>
+        </div>
 
-                            <div class="col-md-6 mb-3">
+        <div class="col-md-6 mb-3">
+            <input
+                type="email"
+                class="form-control"
+                name="email"
+                placeholder="Email Address"
+                required>
+        </div>
+    </div>
 
-                                <input
-                                    type="text"
-                                    class="form-control"
-                                    placeholder="Full Name"
-                                    required>
+    <div class="mb-3">
+        <input
+            type="text"
+            class="form-control"
+            name="subject"
+            placeholder="Subject"
+            required>
+    </div>
 
-                            </div>
+    <div class="mb-3">
+        <textarea
+            class="form-control"
+            name="message"
+            rows="6"
+            placeholder="Tell us about your project..."
+            required></textarea>
+    </div>
 
-                            <div class="col-md-6 mb-3">
+    <button type="submit" class="btn btn-primary btn-lg px-5">
+        <i class="bi bi-send-fill"></i>
+        Send Message
+    </button>
 
-                                <input
-                                    type="email"
-                                    class="form-control"
-                                    placeholder="Email Address"
-                                    required>
+</form>
 
-                            </div>
-
-                        </div>
-
-                        <div class="mb-3">
-
-                            <input
-                                type="text"
-                                class="form-control"
-                                placeholder="Subject"
-                                required>
-
-                        </div>
-
-                        <div class="mb-3">
-
-                            <textarea
-                                class="form-control"
-                                rows="6"
-                                placeholder="Tell us about your project..."
-                                required></textarea>
-
-                        </div>
-
-                        <button class="btn btn-primary btn-lg px-5">
-
-                            <i class="bi bi-send-fill"></i>
-
-                            Send Message
-
-                        </button>
-
-                    </form>
 
                 </div>
 
